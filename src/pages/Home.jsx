@@ -7,7 +7,7 @@ import Lucia from "../sections/Lucia";
 // import Outro from "../sections/Outro";
 import Hero from "../sections/Hero";
 import FirstVideo from "../sections/FirstVideo";
-import NavBar from "../Component/NavBar";
+import NavBar from "../Component/Navbar";
 import ThirdVIdeo from "../sections/ThirdVIdeo";
 import NextLucia from "../sections/NextLucia";
 import FourthVideo from "../sections/FourthVideo";

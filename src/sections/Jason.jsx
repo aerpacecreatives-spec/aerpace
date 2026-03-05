@@ -52,16 +52,18 @@
 
 
 
-import { useRef } from "react"
+import { use, useRef } from "react"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Button from "../Component/Button"
+import { useNavigate } from "react-router-dom"
 
 gsap.registerPlugin(ScrollTrigger)
 
 const Jason = () => {
   const sliderRef = useRef(null)
-
+ const navigate = useNavigate()
   useGSAP(() => {
     gsap.set('.jason', { marginTop: '-80vh' })
 
@@ -101,7 +103,9 @@ const Jason = () => {
         <p className="text-white text-lg md:text-xl">
           Jason grew up around grifters and crooks. After a stint in the Army trying to shake off his troubled teens, he found himself in the Keys doing what he knows best, working for local drug runners. It might be time to try something new.
         </p>
-
+               <Button onClick={() => navigate("/aerverse")}>
+          Read More
+        </Button>
         <div className="jason-2 mt-10">
           <img src="/images/jason-2.webp" className="w-full object-cover" />
         </div>
