@@ -25,6 +25,7 @@
   --breakpoint-sm: 40rem;
   --breakpoint-xs: 20rem;
   --breakpoint-3xl: 120rem;
+   --font-apparat: "KMRApparatBook", sans-serif;
 }
 
 body {
@@ -66,9 +67,14 @@ main {
   nav {
     @apply fixed top-0 left-0 w-full flex justify-between items-center md:p-16 p-5 z-[100];
   }
-  .gradient-title {
+  /* .gradient-title {
     @apply md:text-[8rem] text-[5rem] font-round-bold !font-extrabold uppercase md:leading-[7rem] leading-[4.5rem] text-center bg-gradient-to-r from-pink-400 via-red-400 to-orange-400 bg-clip-text text-transparent;
-  }
+  } */
+
+.gradient-title{
+  @apply text-white md:text-[8rem] text-[5rem] font-apparat uppercase md:leading-[7rem] leading-[4.5rem] text-center bg-gradient-to-r from-pink-400 via-red-400 to-orange-400 bg-clip-text text-transparent;
+}
+
   .hero-section {
     @apply w-dvw h-dvh relative overflow-hidden;
 
@@ -433,6 +439,74 @@ main {
 .aershield-content {
   background: radial-gradient(ellipse, #111117 25%, transparent 75%);
 }
+
+
+
+
+
+
+
+
+
+
+
+.aerracers-life {
+  @apply relative z-10 py-40 mt-60 flex lg:flex-row flex-col justify-between gap-5 w-dvw overflow-x-hidden;
+
+  h1 {
+    @apply text-yellow font-long uppercase text-8xl mb-20;
+  }
+
+  h2 {
+    @apply text-pink md:text-5xl text-3xl mb-7 md:pe-20 pe-10;
+  }
+
+  p {
+    @apply text-white md:text-2xl text-lg md:pe-28 pe-14;
+  }
+
+  .aerracers-1 {
+    @apply bg-yellow lg:h-[80vh] w-auto -translate-x-5;
+
+    img {
+      @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+    }
+  }
+
+  .aerracers-2 {
+    @apply bg-yellow lg:h-[60vh] lg:w-[70%] w-[80%] md:my-36 my-20 lg:-translate-x-5 translate-x-5;
+
+    img {
+      @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+    }
+  }
+
+  .aerracers-3 {
+    @apply bg-yellow lg:h-[90vh] md:w-[60%] -translate-x-5;
+
+    img {
+      @apply size-full object-cover hover:scale-[0.98] transition duration-700 ease-in-out;
+    }
+  }
+}
+
+.aerracers-life-content {
+  background: radial-gradient(ellipse, #111117 20%, transparent 70%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .fifth-vd-wrapper {

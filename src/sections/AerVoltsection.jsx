@@ -1,7 +1,9 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import Button from "../Component/Button";
+import { useNavigate } from "react-router-dom";
 const AerVolt = () => {
+    const navigator = useNavigate()
   useGSAP(() => {
     gsap.set('.aervolt-life', { marginTop: '-80vh' });
 
@@ -36,11 +38,11 @@ const AerVolt = () => {
       {/* Images Left */}
       <div className="flex flex-col gap-5 items-end img-box lg:w-1/2 ps-10 mt-96">
         <div className="aervolt-1">
-          <img src="/images/aervolt-1.webp" />
+          <img src="/images/lucia-1.webp" />
         </div>
 
         <div className="aervolt-3">
-          <img src="/images/aervolt-3.webp" />
+          <img src="/images/lucia-3.webp" />
         </div>
       </div>
 
@@ -57,10 +59,12 @@ const AerVolt = () => {
             Built for the streets of tomorrow, aerVolt blends raw acceleration 
             with silent performance. No noise — just impact.
           </p>
+
+          <Button onClick={()=>navigator("/aervolt")}> read more</Button>
         </div>
 
         <div className="aervolt-2">
-          <img src="/images/aervolt-2.webp" />
+          <img src="/images/lucia-2.webp" />
         </div>
 
         <p className="max-w-xl lg:ps-32 ps-10">
